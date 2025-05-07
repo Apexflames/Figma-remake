@@ -1,195 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family; color: #333; line-height: 1.5; }
-        a { text-decoration: none; color: inherit; }
-        @font-face {
-        font-family: 'Millik';
-        src: url('./millik-regular.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-        }
-
-        /* header */
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #fff;
-            margin: 124px 200px 0px 200px;
-            width: 100%;
-            gap: -500px;
-
-
-        }
-        .join {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 50px;
-            font-weight: 500;
-            font-family: Arial, Helvetica, sans-serif;
-            right: 2000px;
-        }
-
-
-        /* Hero section */
-        .hero {
-          margin: 196px 200px 0px 200px;
-          display: flex;
-          justify-content: space-between;
-          gap: 200px;
-        }
-        .hero-text {
-        flex-direction: row;
-        font-family: 'Millik';
-        font-size: 70px;
-        line-height: 170px;
-        }
-
-        .join-form {
-            display: flex;
-            gap: 40px;
-            margin: 150px 0px 0px 5px;
-        }
-        .name-input {
-            padding: 10px;
-            border: 1px solid #2C2C2C;
-            width: 456px;
-            height: 102px;
-            font-size: 1.5rem;
-        }
-        .email-input {
-            padding: 10px;
-            border: 1px solid #2C2C2C;
-            width: 692px;
-            font-size: 1.5rem;
-        }
-        .join-btn {
-            padding: 10px 20px;
-            background-color: #00C996;
-            color: white;
-            border: none;
-            width: 320px;
-            height: 102px;
-            font-size: 2rem;
-            cursor: pointer;
-            border: #00C996;
-        }
-        .hero-right {
-        position: relative;    
-        width: 100%;           
-        max-width: 600px;     
-        margin: 0 auto;
-        }
-
-        .card-background {
-            position: absolute;
-           width: 650px;
-        }
-
-        .atm-card {
-            position: absolute;
-            width: 780px;
-            height: 1100px;
-            left: -110px;
-            top: -50px;
-            
-        }
-
-        
-           
-        
-        /* Logo section */
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 200px;
-            padding: 44px 101px;
-            gap: 100px;
-            opacity: 1.5;
-            margin-left: 400px;
-        }
-
-        .logo1 {
-            height: auto;
-            width: 200.88px;
-            opacity: 0.6;
-        }
-            
-    </style>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Reabsive Landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebasive Landing Page</title>
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.5; }
+    a { text-decoration: none; color: inherit; }
+    @font-face {
+      font-family: 'Millik';
+      src: url('./millik-regular.otf') format('opentype');
+    }
+
+    /* Header */
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      margin: 100px 150px;
+    }
+    .rebasive-logo {
+      width: 250px;
+      height: auto;
+    }
+    .join {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .join button {
+      font-weight: 500;
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .join .team-btn {
+      color: #00C996;
+      font-size: 2.5rem;
+    }
+    .join .waitlist-btn {
+      color: #252525;
+      font-size: 2.5rem;
+      width: 210px;
+      height: 50px;
+      border: 1px solid #2C2C2C;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      margin: 70px 160px 20px;
+    }
+    .hero-text {
+      font-family: 'Millik', Arial, sans-serif;
+      font-size: 60px;
+      line-height: 160px;
+    }
+    .hero-text h1 { font-weight: 200; }
+    .hero-text span { color: #00C996; }
+    .join-form {
+      display: flex;
+      gap: 40px;
+      margin-top: 150px;
+    }
+    .name-input, .email-input {
+      padding: 10px;
+      border: 1px solid #2C2C2C;
+      font-size: 1.5rem;
+    }
+    .name-input { width: 400px; height: 80px; }
+    .email-input { width: 600px; }
+    .join-btn {
+      padding: 10px 20px;
+      background-color: #00C996;
+      color: #fff;
+      border: none;
+      width: 300px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .hero-image { position: relative; }
+    .hero-image img { display: block; }
+    .card-background {
+      position: absolute;
+      z-index: 1;
+      width: 515px;
+      bottom: 300px;
+    }
+
+    /* Logo Section */
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 150px;
+      padding: 20px 0;
+      gap: 40px;
+    }
+
+    /* Footer CTA */
+    .footer1 { text-align: center; margin: 50px 0; }
+    .footer1 h1 { font-size: 2rem; }
+    .footer-btn1 {
+      padding: 10px 20px;
+      background-color: #00C996;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header section -->
-   <header>
+  <!-- Header -->
+  <header>
     <div class="header-container">
-        <div class="Rebasive"><img src="rebasive logo.png" alt="" style="width: 306px; height: 76; image-rendering: crisp-edges;"></div>
-        <div class="join">
-            <div> <button style="font-weight: 500; color: #00C996; background-color: #fff; border: none; width: 410px; height: auto; font-size: 2.5rem; align-items: center; justify-items: center; cursor: pointer;">Join our team</button></div>
-            <div><buton class=" header-btn" style="font-weight: 500; font-size: 2.5rem ; background-color: #fff; width: 210px; height: 50px; align-items: center; justify-content: center; border: #2C2C2C; border-width: 3px; cursor: pointer;">Join Waitlist</button></div>
-        </div>  
+      <div class="Rebasive"><img src="rebasive logo.png" alt="" class="rebasive-logo"></div>
+      <div class="join">
+        <button class="team-btn">Join our team</button>
+        <button class="waitlist-btn">Join Waitlist</button>
+      </div>
     </div>
-   </header>
+  </header>
 
-   <!-- Hero section-->
-   <div class="hero">
+  <!-- Hero -->
+  <div class="hero">
     <div class="hero-left">
-        <div class="hero-text">
-            <h1 style="font-weight: 400;">One app,<br> a <span style="color: #00C996;">multi-currency <br>wallet </span> and one card <br>infinite possibilities...</h1>
-        </div>
-        <div class="join-form">
-            <input type="text" placeholder="Full name" class="name-input">
-            <input type="text" placeholder="Enter mail" class="email-input">
-            <button class="join-btn">Join Waitlist</button>
-        </div>
+      <div class="hero-text">
+        <h1>One app,<br> a <span>multi-currency <br>wallet </span> and one card <br>infinite possibilities...</h1>
+      </div>
+      <div class="join-form">
+        <input type="text" placeholder="Full name" class="name-input">
+        <input type="text" placeholder="Enter mail" class="email-input">
+        <button class="join-btn">Join Waitlist</button>
+      </div>
     </div>
     <div class="hero-right">
-        <div class="hero-image">
-            <div class="background-card"><img src="atm-background.png" alt="card-background" class="card-background"></div>
-            <div class="overlay"><img src="atmcard.png" alt="atm card" class="atm-card"></div>
-        </div>
+      <div class="hero-image">
+        <img src="atm-background.png" alt="card-background">
+        <img src="atmcard.png" alt="atm card" class="card-background">
+      </div>
     </div>
-    
-   </div>
+  </div>
 
-   <!-- Logo section -->
-   <div class="logo">
-    <img src="Slack Logo.png" alt="" class="logo1">
-    <img src="Prudential Logo.png" alt="" class="logo1">
-    <img src="Microsoft Logo 1.png" alt="" class="logo1">
-    <img src="Zoover Logo.png" alt="" class="logo1">
-   </div>
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="Slack Logo.png" alt="">
+    <img src="Prudential Logo.png" alt="">
+    <img src="Microsoft Logo 1.png" alt="">
+    <img src="Zoover Logo.png" alt="">
+  </div>
 
-   <!-- Features section-->
-   <div class="features">
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="Slack Logo.png" alt="">
+    <img src="Prudential Logo.png" alt="">
+    <img src="Microsoft Logo 1.png" alt="">
+    <img src="Zoover Logo.png" alt="">
+  </div>
+
+  <!-- Features section-->
+  <div class="features">
     <div class="features-img1"><img src="" alt=""></div>
     <div class="features-img2">
-        <div><img src="" alt=""></div>
-        <div class="features-img2-text"></div>
+      <div><img src="" alt=""></div>
+      <div class="features-img2-text"></div>
     </div>
-   </div>
+  </div>
 
-   <!-- How it works section -->
-   <div class="how-it-works">
+  <!-- How it works section -->
+  <div class="how-it-works">
     <div class="how-it works1">
-        <h1>How it works</h1>
-        <p>The next generation of money app</p>
-        <div class="how-it-works1-text">
-            
-        </div>
-        <div class="how-it-works2"><img src="" alt=""></div>
+      <h1>How it works</h1>
+      <p>The next generation of money app</p>
+      <div class="how-it-works1-text">
+        
+      </div>
+      <div class="how-it-works2"><img src="" alt=""></div>
     </div>
-   </div>
+  </div>
 
-    <!-- Footer section -->
+   <!-- Footer section -->
      <div class="footer1">
         <h1>Want to be part of <span style="color: rgb(127, 255, 214);">Rebasive</span>?</h1>
         <button class="footer-btn1">Join our team</button>
