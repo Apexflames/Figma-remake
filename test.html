@@ -1,431 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Rebasive Landing Page</title>
-      <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family; color: #333; line-height: 1.5; }
-        a { text-decoration: none; color: inherit; }
-        @font-face {
-          font-family: 'Millik';
-          src: url('./millik-regular.otf') format('opentype');
-          font-weight: normal;
-          font-style: normal;
-        }
-        @font-face {
-        font-family: 'WhyteInktrap';
-        src: url('./fonts/WhyteInktrap-Regular.woff2') format('woff2'),
-        url('./fonts/WhyteInktrap-Regular.woff') format('woff'),
-        url('./fonts/WhyteInktrap-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
 
+@font-face {
+      font-family: 'Millik';
+      src: url('./millik-regular.otf') format('opentype');
+    }
 
-        /* header */
-        .header-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 20px;
-          background-color: #fff;
-          margin: 50px 200px 0px 200px;
-          width: 80%;
-          gap: -500px;
-        }
-        .header-container .Rebasive img {
-          width: 306px;
-          height: 76px;
-          image-rendering: crisp-edges;
-        }
-        .join {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 50px;
-          font-weight: 500;
-          font-family: Arial, Helvetica, sans-serif;
-          right: 2000px;
-        }
-        .join > div:first-child button {
-          font-weight: 500;
-          color: #00C996;
-          background-color: #fff;
-          border: none;
-          width: 410px;
-          height: auto;
-          font-size: 2.5rem;
-          align-items: center;
-          justify-items: center;
-          cursor: pointer;
-        }
-        .join > div:last-child .header-btn {
-          font-weight: 500;
-          font-size: 2.5rem;
-          background-color: #fff;
-          width: 400px;
-          height: 100px;
-          align-items: center;
-          justify-content: center;
-          border: 3px solid #2C2C2C;
-          cursor: pointer;
-        }
+    .overall-container {
+      max-width: 1080px;
+      width: 100%;
+      justify-content: center;
+    }
+    body {
+      background-color: #ffff;
+      font-family: sans-serif;
+      margin: 0;
+      max-width: 1080px;
+      width: 100%;
+      justify-content: center;
+    }
+    /* header */
+    .header {
+      max-width: 1080px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      margin-left: 20px;
+    }
 
-        /* Hero section */
-        .hero {
-          margin: 100px 200px 0px 200px;
-          display: flex;
-          justify-content: space-between;
-          gap: 70px;
-        }
-        .hero-text {
-          flex-direction: row;
-          font-family: 'Millik';
-          font-size: 60px;
-          line-height: 170px;
-        }
-        .hero-text h1 {
-          font-weight: 400;
-        }
-        .hero-text span {
-          color: #00C996;
-        }
-        .join-form {
-          display: flex;
-          gap: 40px;
-          margin: 100px 0px 0px 5px;
-          width: 90%;
-        }
-        .name-input {
-          padding: 10px;
-          border: 1px solid #2C2C2C;
-          width: 456px;
-          height: 102px;
-          font-size: 1.5rem;
-        }
-        .email-input {
-          padding: 10px;
-          border: 1px solid #2C2C2C;
-          width: 692px;
-          font-size: 1.5rem;
-        }
-        .join-btn {
-          padding: 10px 20px;
-          background-color: #00C996;
-          color: white;
-          border: none;
-          width: 320px;
-          height: 102px;
-          font-size: 2rem;
-          cursor: pointer;
-          border: #00C996;
-          border-style: solid;
-        }
-        .hero-right {
-          position: relative;    
-          width: 100%;           
-          max-width: 600px;     
-          margin: 0 auto;
-        }
-        .card-background {
-          position: absolute;
-          width: 650px;
-        }
-        .atm-card {
-          position: absolute;
-          width: 780px;
-          height: 1100px;
-          left: -110px;
-          top: -50px;
-        }
+    .logo {
+      width: 153px;
+      height: 38px;
+    }
+    .join-our-team {
+      background-color: #fff;
+      border: none;
+      color: #00C996;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 227px;
+      height: 24px;
+      size: 20px;
+      font-size: 20px;
+      font-weight: 500;
+    }
 
-        /* Logo section */
-        .logo {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-top: 200px;
-          padding: 44px 101px;
-          gap: 100px;
-          opacity: 1.5;
-          margin-left: 400px;
-        }
-        .logo1 {
-          height: auto;
-          width: 200.88px;
-          opacity: 0.6;
-        }
+    .join-waitlist {
+      background-color: #fff;
+      border: 1px solid black;
+      color: black;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 215px;
+      height: 50px;
+      size: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0%;
+    }
 
-        /* Features section */
-        .features {
-          display: flex;
-          gap: 700px;
-          margin-top: 200px;
-        }
-        .features-img2 {
-          display: block;
-        }
-        .fimg1 {
-          width: 200%;
-          margin-left: -50px;
-        }
-        .fimg2 {
-          width: 115%;
-          height: 100%;
-        }
-        .features-img2-text {
-          font-family: sans-serif;
-          font-size: 60px;
-          line-height: 100px;
-          margin-top: 70px;
-          color: #2C2C2CCC;
-        }
+   /* main */
+    .main-content {
+      max-width: 1080px;
+      width: 100%;
+      margin: 0;
+    }
 
-        /* How it works section */
-        .how-it-works {
-          display: flex;
-          margin: 150px ;
-          padding: 44px 101px;
-          gap: 100px;
-          border-color: #0C263D;
-          border-style: solid;
-          border-width: 1px;
-          justify-content: space-between;
-        }
+    /* Container 1 */
 
-        .how-it-works1 {
-          gap: 100px;
-        }
+    .container1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 0px;
+      margin-left: 50px;
+      gap: 70px;
+    }
 
-        .how-it-works1-text {
-         line height: 30px;
-         margin-top: 50%;
-        }
+    .one-app {
+      font-family: 'Millik', sans-serif;
+      font-size: 35px;
+      font-weight: 400;
+      width: 768px;
+      height: 340px;
+      line-height: 70px;
+    }
 
-        .hiw-bold1 {
-          font-family: 'Millik';
-          font-size: 90px;
-          line-height: 100px;
-        }
-        .hiw-small1 {
-          font-family: sans-serif;
-          font-size: 50px;
-          line-height: 50px;
-          margin-top: 20px;
-          color: #2C2C2CCC;
-        }
+    .highlight {
+      color: #00C996;
+    }
 
-        .hiw-bold2 {
-          font-family: 'Millik';
-          font-size: 60px;
-          line-height: 100px;
-          font-weight: 100;
-        }
+    .container1-form {
+      display: flex;
+      gap: 10px;
+      margin-top: 70px;
+    }
 
-        .hiw-small2 {
-          font-family: sans-serif;
-          font-size: 35px;
-          line-height: 50px;
-          margin-top: 20px;
-          color: #2C2C2CCC;
-        }
+    .full-name{
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #2C2C2C;
+    }
 
-        .how-it-works2 {
+    .email {
+      width: 260px;
+      padding: 10px;
+      border: 1px solid #2C2C2C;
+      height: 30px;
+    }
 
-        }
+    .join-btn {
+      background-color: #00C996;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 160px;
+      height: 50px;
+      size: 20px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .join-btn:hover {
+    box-shadow: 0 0 12px #00C996;
+    transform: scale(1.02);
+    }
 
-        .himg2 {
-          width: 800px;
-          height: 100%;
-        }
+    .rebasive-img {
+     width: 337px;
+    }
 
-        /* Footer styling moved from inline */
-        .footer1 span {
-          color: rgb(127, 255, 214);
-        }
-        .footer1 {
-          display: flex;
-          flex-direction: column;
-          justify-content: start;
-          margin-top: 200px;
-          padding: 44px 101px;
-          gap: 100px;
-          background-color: #0C263D;
-          color: white;
-          font-family: 'Millik';
-          font-size: 70px;
-          letter-spacing: 5px;
-          background-image: url('footer-background.png');
-          background-repeat: no-repeat;
-          background-size: cover
-        }
+    /* Container 2 */
 
-        .footer1-h1 {
-          margin-left: 100px;
-        }
-         .footer-btn1 {
-          padding: 10px 20px;
-          background: transparent;
-          color: white;
-          border: none;
-          width: 300px;
-          height: 100px;
-          font-size: 2rem;
-          cursor: pointer;
-          border: 3px solid #FFFFFF;
-          width: 400px;
-        }
+    .container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      padding: 0px;
+      gap: 30px;
+      margin: 50px 50px 0px 100px;
+      width: 100%;
+    }
 
-        .footer2 {
-          display: flex;
-          justify-content: space-between;
-          padding: 44px 101px;
-          gap: 100px;
-          background-color: #0C263D;
-          color: white;
-          letter-spacing: 5px;
-          background-color: black;
-          font-family: 'WhyteInktrap';
-          height: 500px;
-        }
+    /* Container 3 */
+    .container3 {
+      max-width: 1080px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      gap: 100px;
+      margin-top: 70px;
+    }
 
-        .footer-container {
-          display: flex;
-          flex-direction:row;
-          justify-content: space-between;
-          gap: 100px;
-        }
-      </style>
-    </head>
-    <body>
-      <!-- Header section -->
-      <header>
-        <div class="header-container">
-          <div class="Rebasive"><img src="rebasive logo.png" alt=""></div>
-          <div class="join">
-            <div>
-              <button>Join our team</button>
-            </div>
-            <div>
-              <button class="header-btn">Join Waitlist</button>
-            </div>
-          </div>
-        </div>
-      </header>
+    .container3img1 {
+      width: 550px;
+      height: auto;
+    }
 
-      <!-- Hero section-->
-      <div class="hero">
-        <div class="hero-left">
-          <div class="hero-text">
-            <h1>
-              One app,<br>
-              a <span>multi-currency <br>wallet </span> and one card <br>infinite possibilities...
-            </h1>
-          </div>
-          <div class="join-form">
-            <input type="text" placeholder="Full name" class="name-input">
-            <input type="text" placeholder="Enter mail" class="email-input">
-            <button class="join-btn">Join Waitlist</button>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="hero-image">
-            <div class="background-card">
-              <img src="atm-background.png" alt="card-background" class="card-background">
-            </div>
-            <div class="overlay">
-              <img src="atmcard.png" alt="atm card" class="atm-card">
-            </div>
-          </div>
+    .container3img2 {
+      width: 600px;
+      height: 500px;
+      margin-top: -10px;
+    }
+
+    .container3-text {
+      font-family: sans-serif;
+      font-size: 25px;
+      font-weight: 31px;
+      width: 450px;
+      line-height: 40px;
+      margin-top: 0px;
+      color: #2C2C2CCC;
+      letter-spacing: 0px;
+      
+    }
+
+    /* Container 4 */
+    .container4 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      gap: 50px;
+      margin: 70px 0px 0px 50px;
+      border: 1px solid #0C263D;
+      width: 100%;
+    }
+
+    .container4-left {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      padding: 20px;
+      gap: 70px;
+    }
+
+  
+    .container4-bold1 {
+      font-family: 'Millik';
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    .container4-light1 {
+      font-family: sans-serif;
+      font-size: 25px;
+      font-weight: 31;
+      line-height: 100%;
+      color: #2C2C2CCC;
+    }
+
+    .container4-bold2 {
+      font-family: 'Millik';
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 60px;
+      width: 350px;
+    }
+
+    .container4-light2 {
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 31;
+      line-height: 156%;
+      color: #2C2C2CCC;
+      width: 450px;
+    }
+
+    /* Container 5 */
+    .container5 {
+      background-image: url(container5.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin-top: 50px;
+    }
+
+  </style>
+</head>
+<div class="overall-container">
+<body>
+<!-- Header -->
+  <header class="header">
+    <div class="Rebasive-logo">
+      <img src="Rebasive logo.svg" alt="Rebasive Logo" class="logo">
+    </div>
+    <div class="header-nav1">
+      <button class="join-our-team">Join our team</button>
+      <button class="join-waitlist">Join Waitlist</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container1">
+      <div class="one-app">
+        <h2 class="hero-text">
+          One app,<br>
+          a <span class="highlight">multi-currency</span><br>
+          <span class="highlight">wallet</span> and one card <br>
+          infinite possibilities...
+        </h2>
+        <div class="container1-form">
+          <input type="text" class="full-name" placeholder="Full name">
+          <input type="text" class="email" placeholder="Enter email ">
+          <button class="join-btn">Join Waitlist</button>
         </div>
       </div>
+      <div class="container1-img">
+        <img src="container1img.svg" alt="Rebasive" class="rebasive-img">
+      </div>
+    </div>
 
-      <!-- Logo section -->
-      <div class="logo">
-        <img src="Slack Logo.png" alt="" class="logo1">
-        <img src="Prudential Logo.png" alt="" class="logo1">
-        <img src="Microsoft Logo 1.png" alt="" class="logo1">
-        <img src="Zoover Logo.png" alt="" class="logo1">
+    <!-- Container 2 -->
+    <div class="container2">
+      <img src="slack.svg" alt="" class="logo1">
+      <img src="prudential.svg" alt="" class="logo1">
+      <img src="microsoft.svg" alt="" class="logo1">
+      <img src="zoover.svg" alt="" class="logo1">
+    </div>
+
+    <!-- Container 3 -->
+    <div class="container3">
+      <img src="container3img1.svg" alt="" class="container3img1">
+      <div>
+        <img src="container3img2.svg" alt="" class="container3img2">
+        <p class="container3-text">Manage, move and invest your money across continents, anytime, anywhere and to almost everywhere.
+        </p>
+      </div>
+    </div>
+    <!-- Container 4 -->
+     <div class="container4">
+      <div class="container4-left">
+        <div class="how-it-works">
+          <h2 class="container4-bold1">How it works</h2>
+          <p class="container4-light1">The next generation of money app</p>
+        </div class="spend-money">
+        <div class="container4-left2">
+          <h2 class="container4-bold2">Spend money like a local globally with real FX rates</h2>
+        <p class="container4-light2">Send and receive instant and secure borderless payments from your fingertips, with no extra fees.
+        </p>
+        </div>
+      </div>
+      <div class="container4-right">
+        <img src="container4img.svg" alt="" class="container4img">
+      </div>
+     </div>
+
+     <!-- Container 5 -->
+      <div class="container5">
+        <h2>
+          Want to be a <br>
+          part of building
+          <span class="green">Rebasive</span>?
+        </h2>
+        <button class="join-teambtn">Join our team</button>
       </div>
 
-      <!-- Features section-->
-      <div class="features">
-        <div class="features-img1">
-          <img src="features1.png" alt="" class="fimg1">
-        </div>
-        <div class="features-img2">
-          <div><img src="features2.png" alt="" class="fimg2"></div>
-          <div class="features-img2-text">
-            Manage, move and invest your money <br>
-            across continents, anytime, anywhere <br>
-            and to almost everywhere.
-          </div>
-        </div>
-      </div>
-
-      <!-- How it works section -->
-      <div class="how-it-works">
-        <div class="how-it works1">
-          <h1 class="hiw-bold1">How it works</h1>
-          <p class="hiw-small1">The next generation of money app</p>
-          <div class="how-it-works1-text">
-            <h1 class="hiw-bold2">Spend money like a <br> local globally with <br> real FX rates</h1>
-            <p class="hiw-small2">
-              Send and receive instant and secure borderless <br> payments from your fingertips, with no extra fees.
+      <!-- Footer -->
+       <footer>
+        <div class="container6">
+          <div class="footer1">
+            <h3>
+              All rights reserved <br>
+              © Rebasive Technologies
+            </h3>
+            <p class="footer-text">
+              At Rebasive, we are offering you a seamless <br>
+              banking experience that can be done anywhere,<br>
+              anytime. Ready to bank with us? Don’t miss out <br>
+              on all the exciting offers
             </p>
           </div>
-        </div>
-        <div class="how-it-works2">
-          <img src="howitworks.png" alt="" class="himg2">
-        </div>
-      </div>
-
-      <!-- Footer section -->
-      <div class="footer1">
-        <h1 class="footer1-text">
-          Want to be a <br>part of building <br> <span>Rebasive</span>?
-        </h1>
-        <button class="footer-btn1">Join our team</button>
-      </div>
-      <div class="footer2">
-        <div>
-            <h1 class="footer-h1">All rights reserved <br>© Rebasive Technologies</h1>
-            <p> At Rebasive, we are offering you a seamless <br>
-                banking experience that can be done anywhere,<br>
-                anytime. Ready to bank with us? Don’t miss out <br>
-                on all the exciting offers</p>
-        </div>
-        <div class="footer-container">
+          <div class="footer2">
             <div>
-                <h1 class="footer-h1">Address</h1>
-            <p>
+              <h3>
+                Address
+              </h3>
+              <p class="footer-text">
                 1151 Walker Road STE 100 Dover,<br>
-DE              19904 Delaware United States
+                DE 19904 Delaware United States 
+              </p>
+            </div>
+            <div>
+              <h3>
+                Support
+              </h3>
+              <p class="footer-text">
+                <a href="" class="footer-link">Contact us</a><br>
+                <a href="" class="footer-link">Help Desk</a>
+              </p>
+              <div>
+                <input type="email" class="footer-email" placeholder="Enter email">
+                <button class="footer-btn">Join Waitlist</button>
+              </div>
+          </div>
+          <div class="footer3">
+            <h3>
+              Soscial networks
+            </h3>
+            <p class="footer-text">
+              <a href="">Facebook</a>
+              <a href="">Twitter</a>
+              <a href="">LinkedIn</a>
+              <a href="">Youtube</a>
+              <a href="">Instagram</a>
             </p>
-            </div>
-            <div>
-                <h1 class="footer-h1">Support</h1>
-                <p>
-                    <a href="#">Contact Us</a><br>
-                    <a href="#">Privacy Policy</a><br>
-            </div>
-            <div>
-                <input type="email" placeholder="Enter email">
-                <button>Join Waitlist</button>
-            </div>
+          </div>
         </div>
-        <div>
-            <h1 class="footer-h1">Social Networks</h1>
-            <p>
-                <a href="#">Facbook</a><br>
-                <a href="#">Tweeter</a><br>
-                <a href="#">LinkedIn</a><br>
-                <a href="#">YouTube</a><br>
-                <a href="#">Instagram</a><br>
-            </p>    
-        </div>
-      </div>
-    </body>
+       </footer>
+       
+    </main>
+</body>
+</div>
 </html>
