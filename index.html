@@ -88,7 +88,8 @@
       display: flex;
       align-items: start;
       padding: 0px;
-      margin-left: 40px;
+      margin-left: 0px;
+      padding-left: 40px;
       gap: 10px;
     }
 
@@ -154,8 +155,10 @@
       align-self: center;
       padding: 0px;
       gap: 30px;
-      margin: 50px 50px 0px 100px;
+      margin: 50px auto 0px auto;
       width: 100%;
+      max-width: 1200px;
+      box-sizing: border-box;
     }
 
     /* Container 3 */
@@ -200,9 +203,10 @@
       align-items: center;
       padding: 30px;
       gap: 50px;
-      margin: 70px 0px 0px 50px;
+      margin: 70px auto 0px auto;
       border: 1px solid #0C263D;
       width: 90%;
+      box-sizing: border-box;
     }
 
     .container4-left {
@@ -304,14 +308,14 @@
       background-color: black;
       display: flex;
       justify-content: space-between;
-      width: 105%;
+      width: 100%;
     }
 
     /* CSS (put inside your <style> or external CSS) */
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 60px 20px;
+  padding: 60px 0px;
   width: 100%;
 }
 .footer-container {
@@ -386,7 +390,7 @@
 }
 
 
-
+/* Responsitivity*/
 img {
   max-width: 100%;
   height: auto;
@@ -765,5 +769,4 @@ img {
   </main>
   </div>
 </body>
-</div>
 </html>
