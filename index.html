@@ -11,14 +11,7 @@
       src: url('./millik-regular.otf') format('opentype');
     }
 
-    .overall-container {
-      max-width: 1200px;
-      width: 100%;
-      justify-content: center;
-      align-self: center;
-      margin: 0 auto;
-      padding: 0px;
-    }
+  
     body {
       background-color: #ffff;
       font-family: sans-serif;
@@ -34,7 +27,7 @@
       align-items: center;
       padding: 20px 0px 0px 20px;
       background-color: #fff;
-      margin-left: 20px;
+      margin: 0 auto;
     }
 
     .logo {
@@ -87,9 +80,10 @@
     .container1 {
       display: flex;
       align-items: start;
-      padding: 0px;
-      padding-left: 40px;
-      gap: 10px;
+      margin: 50px auto;
+      gap: 50px;
+      width: 100%;
+      max-width: 1200px;
     }
 
     .one-app {
@@ -155,7 +149,7 @@
       align-self: center;
       padding: 0px;
       gap: 30px;
-      margin: 50px auto 0px auto;
+      margin: 50px auto 0px;
       width: 100%;
       max-width: 1200px;
       box-sizing: border-box;
@@ -170,7 +164,7 @@
       align-items: center;
       padding: 0px;
       gap: 100px;
-      margin-top: 70px;
+      margin: 70px auto;
     }
 
     .container3img1 {
@@ -203,9 +197,10 @@
       align-items: center;
       padding: 30px;
       gap: 50px;
-      margin: 70px auto 0px auto;
+      margin: 70px auto 0px;
       border: 1px solid #0C263D;
-      width: 90%;
+      width: 100%;
+      max-width: 1200px;
       box-sizing: border-box;
     }
 
@@ -257,9 +252,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
+      max-width: 1200px;
       display: flex;
       flex-direction: column;
-      margin-top: 50px;
+      margin: 50px auto 0;
       justify-content: start;
       
     }
@@ -309,33 +305,46 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      margin: 0 auto;
     }
 
-    /* CSS (put inside your <style> or external CSS) */
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 60px 0px;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .footer-container {
   max-width: 1200px;
-  margin: 0px;
   display: flex;
-  gap: 100px;
-  flex-wrap: wrap;
-  padding: 50px;
+  padding: 0 0 0 50px;
+  margin: 0 auto;
+  column-gap: 100px;
+
 }
 .footer-col {
-  flex: 1;
-  min-width: 200px;
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
 }
+
+.footer-col-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-first{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
 .footer-col h3 {
   font-size: 25px;
   margin-bottom: 20px;
   line-height: 1.2;
-  width: 500px;
+
 }
 .footer-col p {
   font-size: 0.9rem;
@@ -358,12 +367,10 @@
 /* Newsletter form */
 .newsletter {
   display: flex;
-  margin-top: 30px;
-  max-width: 400px;
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 50px;
   height: 45px;
-  margin: 100px 0px 0px -250px;
+  
 }
 .newsletter input {
   flex: 1;
@@ -734,26 +741,33 @@ img {
     </div>
 
     <!-- Column 2 -->
-    <div class="footer-col" class="footer-col-2">
-      <h3>Address</h3>
-      <p>1151 Walker Road STE 100 Dover,<br>
+    <div class="footer-col footer-col-2">
+      <div class="footer-first">
+        <div class="footer-col">
+          <h3>Address</h3>
+          <p>1151 Walker Road STE 100 Dover,<br>
          DE 19904 Delaware United States</p>
-    </div>
+        </div>
 
-    <!-- Column 3 -->
-    <div class="footer-col">
-      <h3>Support</h3>
-      <ul class="footer-links">
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Help Desk</a></li>
-      </ul>
-      <form class="newsletter">
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul class="footer-links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help Desk</a></li>
+          </ul>
+        </div>
+      </div>
+       
+
+      <div class="footer-bottom">
+        <form class="newsletter">
         <input type="email" placeholder="Enter email" />
         <button type="submit">Join Waitlist</button>
       </form>
+      </div>
     </div>
 
-    <!-- Column 4 -->
+    <!-- Column 3 -->
     <div class="footer-col">
       <h3>Social networks</h3>
       <ul class="footer-links">
