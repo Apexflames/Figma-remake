@@ -199,7 +199,7 @@
       gap: 50px;
       margin: 70px auto 0px;
       border: 1px solid #0C263D;
-      width: 100%;
+      width: 90%;
       max-width: 1200px;
       box-sizing: border-box;
     }
@@ -306,6 +306,7 @@
       justify-content: space-between;
       width: 100%;
       margin: 0 auto;
+      height: 700px;
     }
 
 .footer {
@@ -314,6 +315,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  height: auto;
 }
 .footer-container {
   max-width: 1200px;
@@ -337,7 +339,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  column-gap: 30px;
+  column-gap: 60px;
 }
 
 .footer-col h3 {
@@ -357,6 +359,8 @@
 }
 .footer-links li {
   margin-bottom: 8px;
+  margin-top: -25px;
+  line-height: 3rem;
 }
 .footer-links a {
   color: #fff;
@@ -380,6 +384,10 @@
   color: #fff;
   font-size: 0.9rem;
   outline: none;
+}
+
+.newsletter input::placeholder{
+  color: #FFFFFF;
 }
 .newsletter button {
   padding: 0 20px;
@@ -689,7 +697,7 @@ img {
 
     <!-- Container 3 -->
     <div class="container3">
-      <img src="container3img1.svg" alt="" class="container3img1">
+      <img src="container3img1.svg" alt="Changi Airport" class="container3img1">
       <div>
         <img src="container3img2.svg" alt="" class="container3img2">
         <p class="container3-text">Manage, move and invest your money across continents, anytime, anywhere and to almost everywhere.
@@ -751,10 +759,15 @@ img {
 
         <div class="footer-col">
           <h3>Support</h3>
-          <ul class="footer-links">
+          <p>
+            <ul class="footer-links">
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Help Desk</a></li>
+            <p>
+              <li><a href="#">Help Desk</a></li>
+            </p>
           </ul>
+          </p>
+          
         </div>
       </div>
        
@@ -770,13 +783,17 @@ img {
     <!-- Column 3 -->
     <div class="footer-col">
       <h3>Social networks</h3>
-      <ul class="footer-links">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Tweet­er</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">Instagram</a></li>
+      <p>
+        <ul class="footer-links">
+        
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Tweet­er</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
       </ul>
+      </p>
+      
     </div>
   </div>
 </footer>
